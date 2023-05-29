@@ -38,5 +38,11 @@ public class Person {
         return name + " " + surname + " " + age;
     }
 
+    protected static int parts(Person person) {
+        String parts = person.getSurname();
+        return parts.split(" ").length;
+    }
+
+
 
 }
